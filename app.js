@@ -20,6 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, './aplicacao-jobs-view/dist/aplicacao-jobs-view/')));
+console.log("VALOR DO DIRNAME --- "+ __dirname);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
