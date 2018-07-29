@@ -1,0 +1,1 @@
+web: set DEBUG=aplicacao-jobs:* & npm start
