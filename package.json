@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node ./bin/www",
-    "postinstall": "./aplicacao-jobs-view & ng build"
+    //"postinstall": "./aplicacao-jobs-view & ng build"
 
   },
   "dependencies": {
