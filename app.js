@@ -12,7 +12,7 @@ var app = express();
 
 // view engine setup
 app.engine('html', require('ejs').renderFile);
-app.set('views', path.join(__dirname, './aplicacao-jobs-view/dist/'));
+app.set('views', path.join(__dirname, './aplicacao-jobs-view/dist/aplicacao-jobs-view/'));
 app.set('view engine', 'html');
 
 app.use(logger('dev'));
