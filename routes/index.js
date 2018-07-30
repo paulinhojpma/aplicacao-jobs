@@ -5,7 +5,7 @@ console.log("valor do snap - "+snap.consulta);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('./aplicacao-jobs-view/index');
+  res.render('index');
 });
 
 
