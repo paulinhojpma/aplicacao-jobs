@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "start": "node ./bin/www",
-    //"postinstall": "./aplicacao-jobs-view & ng build"
-
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
