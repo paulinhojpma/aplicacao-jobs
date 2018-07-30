@@ -5,7 +5,8 @@ console.log("valor do snap - "+snap.consulta);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+console.log("ANTES DE ENTRAR NO INDEX.HTML");
+  res.render('index.html');
 });
 
 
