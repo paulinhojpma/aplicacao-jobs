@@ -12,16 +12,16 @@ var app = express();
 
 // view engine setup
 app.engine('html', require('ejs').renderFile);
-app.set('views', path.join(__dirname, 'views'));
-//app.set('views', path.join(__dirname, './aplicacao-jobs-view/dist/aplicacao-jobs-view/'));
+//app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'aplicacao-jobs-view/dist/aplicacao-jobs-view'));
 app.set('view engine', 'html');
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-//app.use(express.static(path.join(__dirname, './aplicacao-jobs-view/dist/aplicacao-jobs-view/')));
+//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'aplicacao-jobs-view/dist/aplicacao-jobs-view')));
 console.log("VALOR DO DIRNAME --- "+ __dirname);
 
 app.use('/', indexRouter);
